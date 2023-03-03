@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+        /* Apply some basic styles to the body */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    /* Style the main block */
+    .main-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: linear-gradient(to bottom left, lightgreen, blue);
+    }
+
+    /* Style the form */
+    form {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      width: 400px;
+      text-align: center;
+    }
+
+    /* Style the form header */
+    form h1 {
+      font-size: 24px;
+      margin: 0 0 20px;
+      text-align: center;
+      color: #333;
+      text-shadow: 1px 1px 0 #fff;
+    }
+
+    /* Style the error message */
+    form h1:first-of-type {
+      color: red;
+    }
+
+    /* Style the form label and input */
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      margin-top: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #333;
+    }
+
+    form input[type="text"],
+    form input[type="password"] {
+      border: none;
+      border-radius: 3px;
+      font-size: 16px;
+      padding: 10px;
+      width: 95%;
+      background-color: #f2f2f2;
+      box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    form input[type="text"]:focus,
+    form input[type="password"]:focus {
+      outline: none;
+      box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Style the form button */
+    form button[type="submit"] {
+      background-color: #008CBA;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    form button[type="submit"]:hover {
+      background-color: #006080;
+    }
+
+    form input[type="checkbox"] {
+      transform: scale(2);
+      margin-top: 10px;
+      margin-right: 10px;
+
+    }
+  </style>
+  <meta charset="UTF-8">
+  <title>adding failed</title>
+</head>
+<body class="main-block">
+<form method="get" action="/add-student">
+  <h1 style="color:Red; text-align:center" >Some of the input is invalid</h1>
+  <button type="submit" style="align:center">Try Again</button>
+</form>
+</body>
+</html>
+
